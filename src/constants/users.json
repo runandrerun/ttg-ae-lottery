@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "streetwise",
+      "shows": [],
+      "lotteryEntry": [],
+    },
+    {
+      "id": 2,
+      "username": "justamindatwork",
+      "shows": [],
+      "lotteryEntry": [],
+    },
+    {
+      "id": 3,
+      "username": "lafayette",
+      "shows": [],
+      "lotteryEntry": [],
+    },
+    {
+      "id": 4,
+      "username": "mulligan",
+      "shows": [],
+      "lotteryEntry": [],
+    },
+    {
+      "id": 5,
+      "username": "ccsabathia",
+      "shows": [],
+      "lotteryEntry": [],
+    },
+  ]
+}
