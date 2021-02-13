@@ -1,34 +1,37 @@
 import React, {useState, useEffect} from 'react';
 import {
   HeroContainer,
-  ShowingsContainer
+  ShowsContainer
 } from '../../containers';
 import { Loading } from '../../components';
+import { ShowsContext } from '../../context';
 import data from '../../constants/shows.json';
-import {PageWrap} from '../../hocs';
+import {lotteryPicker} from '../../utils';
+import { PageWrap } from '../../hocs';
 
 export const Home = () => {
 
-  const [showingsList, setShowingsList] = useState([]);
+  const [showsList, setShowsList] = useState([]);
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
-    setShowingsList(data.shows);
+    setShowsList(data.shows);
     setLoading(false);
   }, []);
 
   return (
     <section id="home">
-      <HeroContainer
-        header={"All shows in New York"}
-        subheader={"We have a theater seat for everyone — no matter the show."}
-      />
-      <Loading />
-      {
-        !isLoading ?
-        <ShowingsContainer />
-        : <Loading />
-      }
+      <ShowsContext.Provider value={{ showsList, setShowsList }}>
+        <HeroContainer
+          header={"All shows in New York"}
+          subheader={"We have a theater seat for everyone — no matter the show."}
+        />
+        {
+          !isLoading ?
+          <ShowsContainer />
+          : <Loading />
+        }
+      </ShowsContext.Provider>
     </section>
   );
 };
