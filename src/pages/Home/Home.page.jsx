@@ -1,21 +1,25 @@
 import React, {useState, useEffect} from 'react';
 import {
   HeroContainer,
-  ShowsContainer
+  ShowsContainer,
+  WelcomePanelContainer
 } from '../../containers';
 import { Loading } from '../../components';
 import { ShowsContext } from '../../context';
-import data from '../../constants/shows.json';
+import showsData from '../../constants/shows.json';
+import userData from '../../constants/users.json';
 import {lotteryPicker} from '../../utils';
 import { PageWrap } from '../../hocs';
 
 export const Home = () => {
 
   const [showsList, setShowsList] = useState([]);
+  const [currentUser, setCurrentUser] = useState({});
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
-    setShowsList(data.shows);
+    setCurrentUser(userData.users[0])
+    setShowsList(showsData.shows);
     setLoading(false);
   }, []);
 
@@ -26,6 +30,11 @@ export const Home = () => {
           header={"All shows in New York"}
           subheader={"We have a theater seat for everyone — no matter the show."}
         />
+        {
+          !isLoading ?
+          <WelcomePanelContainer user={currentUser} />
+          : <Loading />
+        }
         {
           !isLoading ?
           <ShowsContainer />

@@ -5,6 +5,7 @@ import {
   Disclaimer,
   ContentWrap,
   Copy,
+  Links,
   Link
 } from './Footer.styles';
 import * as ROUTES from '../../constants/routes';
@@ -28,6 +29,24 @@ Footer.ContentWrap = function FooterContentWrap({children, ...restProps}) {
 Footer.Copy = function FooterCopy({children, ...restProps}) {
   return (
     <Copy {...restProps}>{children}</Copy>
+  );
+};
+
+Footer.Links = function FooterLinks({links}) {
+  return (
+    <Links>
+      {
+        links.map((link, i) => {
+          return (
+            <Link
+              key={i + link}
+            >
+              {link}
+            </Link>
+          )
+        })
+      }
+    </Links>
   );
 };
 

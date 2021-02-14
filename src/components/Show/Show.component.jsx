@@ -31,6 +31,6 @@ Show.Title = function ShowTitle({children, ...restProps}) {
 
 Show.Tickets = function ShowTickets({children, ...restProps}) {
   return (
-    <Tickets {...restProps}>{children}</Tickets>
+    <Tickets {...restProps}>Tickets Available: {children}</Tickets>
   );
 };

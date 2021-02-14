@@ -10,7 +10,9 @@ export default function FooterContainer() {
       />
       <Footer.ContentWrap>
         <Footer.Copy>© 2021 TodayTix, Inc. All rights reserved.</Footer.Copy>
-        <Footer.Link>Terms of Use Privacy Policy Buyer Guarantee</Footer.Link>
+        <Footer.Links
+          links={["Terms of Use", "Privacy Policy", "Buyer Guarantee"]}
+        />
       </Footer.ContentWrap>
       <Footer.Disclaimer>
         Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.

@@ -13,7 +13,9 @@ export default function ShowingsContainer() {
             <Show.Card key={id + title}>
               <Show.Title>{title}</Show.Title>
               <Show.Tickets>{tickets}</Show.Tickets>
-              <Button>Click here</Button>
+              <Button>
+                Click here
+              </Button>
             </Show.Card>
           )
         })
