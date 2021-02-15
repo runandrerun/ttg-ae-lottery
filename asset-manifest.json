@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ttg-ae-lottery/static/css/main.f8f1096a.chunk.css",
+    "main.js": "/ttg-ae-lottery/static/js/main.75e2b9dd.chunk.js",
+    "main.js.map": "/ttg-ae-lottery/static/js/main.75e2b9dd.chunk.js.map",
+    "runtime-main.js": "/ttg-ae-lottery/static/js/runtime-main.1944c58d.js",
+    "runtime-main.js.map": "/ttg-ae-lottery/static/js/runtime-main.1944c58d.js.map",
+    "static/js/2.cc3c7a96.chunk.js": "/ttg-ae-lottery/static/js/2.cc3c7a96.chunk.js",
+    "static/js/2.cc3c7a96.chunk.js.map": "/ttg-ae-lottery/static/js/2.cc3c7a96.chunk.js.map",
+    "static/js/3.2914c01b.chunk.js": "/ttg-ae-lottery/static/js/3.2914c01b.chunk.js",
+    "static/js/3.2914c01b.chunk.js.map": "/ttg-ae-lottery/static/js/3.2914c01b.chunk.js.map",
+    "index.html": "/ttg-ae-lottery/index.html",
+    "static/css/main.f8f1096a.chunk.css.map": "/ttg-ae-lottery/static/css/main.f8f1096a.chunk.css.map",
+    "static/js/2.cc3c7a96.chunk.js.LICENSE.txt": "/ttg-ae-lottery/static/js/2.cc3c7a96.chunk.js.LICENSE.txt",
+    "static/media/tickets.d44dc5aa.svg": "/ttg-ae-lottery/static/media/tickets.d44dc5aa.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1944c58d.js",
+    "static/js/2.cc3c7a96.chunk.js",
+    "static/css/main.f8f1096a.chunk.css",
+    "static/js/main.75e2b9dd.chunk.js"
+  ]
+}
