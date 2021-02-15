@@ -72,7 +72,6 @@ Show.EntryButton = function ShowEntryButton({showId, children, ...restProps}) {
     return setShowsList(prevShowsList => {
       return prevShowsList.map(show => {
         if (show.id === showId) {
-          console.log("MADE IT")
           return (
             {
               ...show,

@@ -1,5 +1,7 @@
 export const HOME = '/';
-export const ABOUT = '/about';
 export const GITHUB = 'https://github.com/runandrerun';
-export const MOVIE = '/movie/'
-export const MOVIESLUG = '/movie/:id'
+export const ABOUT = '/about'
+
+// for gh-pages
+export const GITHOME = '/ttg-ae-lottery/';
+export const GITABOUT = '/ttg-ae-lottery/about';

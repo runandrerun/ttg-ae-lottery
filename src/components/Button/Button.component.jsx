@@ -14,7 +14,6 @@ export default function Button({showId, children, ...restProps}) {
     e.preventDefault();
     let updatedUser = currentUser.lotteryEntry.push(showId);
     setCurrentUser(updatedUser)
-    console.log(currentUser)
   }, [setCurrentUser]);
 
 

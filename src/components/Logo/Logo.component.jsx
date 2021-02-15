@@ -8,7 +8,7 @@ import * as ROUTES from '../../constants/routes';
 
 export default function Logo({ ...restProps }) {
   return (
-    <Container to={ROUTES.HOME}>
+    <Container to={ROUTES.GITHOME}>
       <LogoIcon {...restProps} />
       <LogoText>tmr<span>Tix</span></LogoText>
     </Container>

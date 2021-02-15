@@ -6,7 +6,6 @@ import {
   ButtonLink
 } from './Header.styles';
 import {Link} from 'react-router-dom';
-import * as ROUTES from '../../constants/routes';
 
 export default function Header({ children, ...restProps }) {
   return (

@@ -6,3 +6,4 @@ export { default as Logo } from './Logo/Logo.component';
 export { default as Loading } from './Loading/Loading.component';
 export { default as Button } from './Button/Button.component';
 export { default as WelcomePanel } from './WelcomePanel/WelcomePanel.component';
+export { default as Content } from './Content/Content.component';

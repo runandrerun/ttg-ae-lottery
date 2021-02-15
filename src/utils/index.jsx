@@ -24,7 +24,6 @@ export const filterWinner = (usersList, winner) => {
 };
 
 const lotteryPicker = (usersList, tickets) => {
-  console.log(tickets)
   while (tickets >= 1 && usersList.length >= 1) {
     let selectedUser = usersList[Math.floor(Math.random() * usersList.length)];
     tickets -= selectedUser.tickets;
