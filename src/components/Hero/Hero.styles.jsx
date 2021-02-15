@@ -3,13 +3,11 @@ import styled from 'styled-components/macro';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 `;
 
 export const InnerWrap = styled.div`
   text-align: left;
   padding: 100px;
-  /* margin: 0 auto; */
 
   @media (max-width: 1000px) {
     padding: 25px;

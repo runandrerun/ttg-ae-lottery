@@ -13,9 +13,9 @@ const users = [
   }
 ];
 
-let ticketsAvailable = 100;
+let ticketsAvailable = 3;
 
-const filterWinner = (usersList, winner) => {
+export const filterWinner = (usersList, winner) => {
   return usersList.filter((user) => {
     if (user.name !== winner) {
       return user;
@@ -34,3 +34,29 @@ const lotteryPicker = (usersList, tickets) => {
 };
 
 lotteryPicker(users, ticketsAvailable);
+
+export const runLotteryPicker = (usersList, show) => {
+  while (show.tickets >= 1 && usersList.length >= 1) {
+    let selectedUser = usersList[Math.floor(Math.random() * usersList.length)];
+    show.tickets -= selectedUser.tickets;
+    let filteredWinners = filterWinner(usersList, selectedUser.name);
+    return lotteryPicker(filteredWinners, show.tickets);
+  };
+}
+
+export const updateUserLotteryEntry = async (user, showId) => {
+  if (doesEntryExist(user, showId)) {
+    return false;
+  } else {
+    return user.lotteryEntry.push(showId);
+  };
+};
+
+// does the entry already exist?
+export const doesEntryExist = (user, showId) => {
+  return user.lotteryEntry.find(entry => {
+    if (entry === showId) {
+      return true;
+    };
+  });
+};

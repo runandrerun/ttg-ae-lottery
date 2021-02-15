@@ -4,31 +4,36 @@
       "id": 1,
       "username": "streetwise",
       "shows": [],
-      "lotteryEntry": []
+      "lotteryEntry": ["1", "2"],
+      "won": []
     },
     {
       "id": 2,
       "username": "justamindatwork",
       "shows": [],
-      "lotteryEntry": []
+      "lotteryEntry": ["3"],
+      "won": []
     },
     {
       "id": 3,
       "username": "lafayette",
       "shows": [],
-      "lotteryEntry": []
+      "lotteryEntry": ["1", "4"],
+      "won": []
     },
     {
       "id": 4,
       "username": "mulligan",
       "shows": [],
-      "lotteryEntry": []
+      "lotteryEntry": ["1", "3", "5"],
+      "won": []
     },
     {
       "id": 5,
       "username": "ccsabathia",
       "shows": [],
-      "lotteryEntry": []
+      "lotteryEntry": ["4", "5"],
+      "won": []
     }
   ]
 }

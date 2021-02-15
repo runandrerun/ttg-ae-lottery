@@ -1,21 +1,28 @@
-import React from 'react';
+import React, {useContext, useCallback} from 'react';
 import {
   Container,
   InnerWrap
 } from './Button.styles';
+import {UsersContext} from '../../context';
+import {updateUserLotteryEntry} from '../../utils';
 
-export default function Button({children, ...restProps}) {
+export default function Button({showId, children, ...restProps}) {
+
+  const { currentUser, setCurrentUser } = useContext(UsersContext);
+
+  const handleClick = useCallback((e) => {
+    e.preventDefault();
+    let updatedUser = currentUser.lotteryEntry.push(showId);
+    setCurrentUser(updatedUser)
+    console.log(currentUser)
+  }, [setCurrentUser]);
+
+
   return (
     <Container {...restProps}>
-      <InnerWrap>
+      <InnerWrap onClick={handleClick}>
         {children}
       </InnerWrap>
     </Container>
   );
 };
-
-// Button.InnerWrap = function ButtonInnerWrap({children, ...restProps}) {
-//   return (
-//     <InnerWrap {...restProps}>{children}</InnerWrap>
-//   );
-// };

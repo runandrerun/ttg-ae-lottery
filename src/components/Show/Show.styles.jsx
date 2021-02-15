@@ -37,3 +37,34 @@ export const Tickets = styled.p`
   font-family: Arial, sans-serif;
   font-weight: 400;
 `;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 85%;
+`;
+
+export const EntryButton = styled.button`
+  align-self: flex-end;
+  font-family: Montserrat;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 130px;
+  height: 30px;
+  text-align: center;
+  color: #e42d2d;
+`;
+
+export const LottoButton = styled.button`
+  align-self: flex-end;
+  font-family: Montserrat;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 130px;
+  height: 30px;
+  text-align: center;
+  color: #e42d2d;
+`;
