@@ -10,15 +10,6 @@ export default function WelcomePanelContainer() {
   return (
     <WelcomePanel>
       <WelcomePanel.Header>{currentUser.username}</WelcomePanel.Header>
-      {
-        currentUser.lotteryEntry.length > 0 ?
-        currentUser.lotteryEntry.map(entry => {
-          return (
-            <div>{entry}</div>
-          )
-        }) :
-        null
-      }
     </WelcomePanel>
   );
 };
